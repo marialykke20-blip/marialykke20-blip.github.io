@@ -1,0 +1,49 @@
+body {
+  margin: 10;
+  background:bisque;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  padding: 10px;
+  gap: 40px;
+}
+
+/* Venstre halvdel */
+.left {
+  flex: 1;
+  background: white;
+  border: 1px solid #bbb;
+  
+}
+
+/* Højre halvdel med 8 bokse */
+.right {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+
+}
+
+.box {
+  background: white;
+  border: 1px solid #bbb;
+  display: flex;
+  justify-content: center;
+  padding-top: 2pc;
+  flex-direction: column;
+}
+
+h1{
+    font-family: "fira sans" monospace;
+}
+
+#headline{
+    width: 20pc;
+    margin: 2pc;
+}
+
+
