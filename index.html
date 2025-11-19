@@ -1,56 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Maria Portefølje</title>
     <link href="forside.css" rel="stylesheet">
 </head>
 <body>
 
-    
-    
-     <div class="container">
-    <div class="left">
+<div class="page">
 
-        <div id="headline">
-        <h1>Min portefolie</h1>
-        <hr/> 
+    <!-- VENSTRE SIDE: PORTRÆT + INTRO -->
+    <aside class="profile">
+        <h1>Min portefølje</h1>
+        <p class="subtitle">Maria Lykke</p>
+        <hr>
 
-        <br>
+        <img src="mig.png" alt="Portræt af Maria" class="profile-img">
 
-        <img src="mig.png" height="400" width="400">
-
+        <div class="profile-text">
+            <p>
+                Jeg er studerende på Aarhus Universitet og brænder for digital kommunikation,
+                service og gode brugeroplevelser. Jeg trives i miljøer, hvor der er plads til
+                både struktur og kreativitet, og hvor samarbejde og ansvarlighed er en del af hverdagen.
+            </p>
+            <p>
+                Jeg arbejder selvstændigt, er nysgerrig på nye systemer og trives med at have kontakt
+                til mennesker, både kollegaer og kunder.
+            </p>
         </div>
-        <h2></h2>
 
-    </div>
+        <div class="profile-info">
+            <p><strong>E-mail:</strong> Marialykke20@gmail.com</p>
+            <p><strong>By:</strong> Aarhus C</p>
+        </div>
+    </aside>
 
-    <div class="right">
-      <div class="box">
-    <img id="piger" src="piger.png" height="250" width="auto">
+    <!-- HØJRE SIDE: 4 KORT -->
+    <main class="grid">
 
-        <p> Om mig</p>
-      </div>
-      <div class="box">
+        <article class="card">
+            <img src="piger.png" alt="Maria sammen med venner" class="card-img">
+            <div class="card-content">
+                <h2>Om mig</h2>
+                <p>
+                    Jeg er 22 år, struktureret og imødekommende. I studie- og arbejdssammenhænge
+                    er jeg den, der holder overblik, følger op på aftaler og sørger for,
+                    at alle føler sig godt tilpas. Jeg motiveres af at lære nyt og tage ansvar.
+                </p>
+            </div>
+        </article>
 
-         <img src="kopper.png" height="250" width="auto">
-         <p>CV</p>
-      </div>
-      
+        <article class="card">
+            <img src="kopper.png" alt="Kopper på bord" class="card-img">
+            <div class="card-content">
+                <h2>CV</h2>
+                <p>
+                    Her kan du få et hurtigt overblik over min uddannelse, og erfaring
+                    fra tidligere arbejdspladser
+                </p>
+                <a href="cv.html" class="button" target="_blank">Åbn mit CV</a>
+            </div>
+        </article>
 
-      <div class="box">
-        <img src="study.png" height="250" width="auto">
-        <p> Projekter</p>
-      </div>
-      <div class="box">
+        <article class="card">
+            <img src="study.png" alt="Studie-arbejdsplads" class="card-img">
+            <div class="card-content">
+                <h2>Projekter</h2>
+                <p>
+                    På studiet har jeg bl.a. arbejdet med analyser af digitale platforme,
+                    brugerundersøgelser og samarbejdsprojekter, hvor vi planlægger, designer
+                    og formidler digitale løsninger.
 
-        <img src="home.png" height="250" width="auto">
-        <p style="font-family: 'Courier New', Courier, monospace;"> mine interesser</p>
-      </div>
-      
-    </div>
-  </div>
+                    <a href="projekter.html" class="button" target="_blank">Åbn mine projekter</a>
+                </p>
+            </div>
+        </article>
+
+        <article class="card">
+            <img src="home.png" alt="Hjemlig stemning" class="card-img">
+            <div class="card-content">
+                <h2>Mine interesser</h2>
+                <p>
+                    I min fritid går jeg op i madlavning, og kreative projekter.
+                    Jeg sætter pris at dyrke sport og leve sundt
+                </p>
+            </div>
+        </article>
+
+    </main>
+</div>
 
 </body>
 </html>
